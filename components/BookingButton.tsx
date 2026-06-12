@@ -23,8 +23,9 @@ export default function BookingButton({
 
   // Track click + open modal
   const handleClick = () => {
+    // data-umami-event on the button handles tracking declaratively (more reliable).
+    // This fallback fires in case the script hasn't attached its listener yet.
     try {
-      // Umami custom event – cookiefrei, kostenlos, DSGVO-konform
       window.umami?.track("booking_intent", { source });
     } catch {
       // Silent: analytics must never break UX
@@ -65,6 +66,8 @@ export default function BookingButton({
         onClick={handleClick}
         className={`${baseClass} ${sizeClasses} ${className}`}
         aria-haspopup="dialog"
+        data-umami-event="booking_intent"
+        data-umami-event-source={source}
       >
         <span>{children}</span>
         <svg
