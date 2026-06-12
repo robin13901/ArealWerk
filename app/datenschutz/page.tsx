@@ -127,16 +127,17 @@ export default function DatenschutzPage() {
               </p>
 
               <h2 className="mt-10 font-heading text-xl font-semibold">
-                5. Reichweitenmessung mit Vercel Analytics
+                5. Reichweitenmessung mit Umami Analytics
               </h2>
               <p className="mt-3 leading-relaxed text-ink-700">
                 Wir setzen auf dieser Website&nbsp;
-                <strong>Vercel Web Analytics</strong> der Vercel Inc. ein,
-                um die Nutzung unserer Website statistisch auszuwerten. Vercel
-                Analytics arbeitet&nbsp;
+                <strong>Umami Analytics</strong> (Umami Software, Inc.,
+                USA) ein, um die Nutzung unserer Website statistisch
+                auszuwerten. Umami arbeitet&nbsp;
                 <strong>cookiefrei und privacy-friendly</strong>: Es werden
                 keine Cookies gesetzt und es findet kein Cross-Site- oder
-                Cross-Device-Tracking statt.
+                Cross-Device-Tracking statt. IP-Adressen werden vor der
+                Speicherung anonymisiert und nicht dauerhaft erfasst.
               </p>
               <p className="mt-3 leading-relaxed text-ink-700">
                 Verarbeitet werden ausschließlich aggregierte und
@@ -146,7 +147,7 @@ export default function DatenschutzPage() {
                 <li>aufgerufene Seite (URL-Pfad)</li>
                 <li>Referrer (woher der Besucher kommt)</li>
                 <li>Land (auf Basis der IP-Adresse, nicht gespeichert)</li>
-                <li>Gerätetyp und Browser (grobe Kategorien)</li>
+                <li>Gerätetyp, Browser und Bildschirmauflösung (grobe Kategorien)</li>
                 <li>
                   benutzerdefinierte Ereignisse, z.&nbsp;B. der Klick auf den
                   Button „Termin anfragen“ (Event:&nbsp;
@@ -167,12 +168,12 @@ export default function DatenschutzPage() {
                 Reichweitenmessung zur Verbesserung unseres Angebots).
                 Weitere Informationen finden Sie in der&nbsp;
                 <a
-                  href="https://vercel.com/legal/privacy-policy"
+                  href="https://umami.is/privacy"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-brand-700 underline-offset-2 hover:underline"
                 >
-                  Datenschutzerklärung von Vercel
+                  Datenschutzerklärung von Umami
                 </a>
                 .
               </p>

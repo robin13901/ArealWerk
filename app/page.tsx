@@ -1,4 +1,5 @@
 import BookingButton from "@/components/BookingButton";
+import BeforeAfterSlider from "@/components/BeforeAfterSlider";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -260,90 +261,9 @@ export default function Home() {
                 </ul>
               </div>
 
-              {/* Visual card */}
+              {/* Visual: interactive before/after slider */}
               <div className="relative animate-fade-in lg:pl-6">
-                <div className="relative overflow-hidden rounded-3xl border border-ink-200 bg-white shadow-soft-lg">
-                  {/* Stylized "before / after" splash visual */}
-                  <div className="relative aspect-[4/3] w-full overflow-hidden">
-                    {/* Dirty side */}
-                    <div className="absolute inset-0 bg-gradient-to-br from-[#3d3a32] via-[#4a4438] to-[#5b5347]">
-                      <div
-                        aria-hidden="true"
-                        className="absolute inset-0 opacity-40"
-                        style={{
-                          backgroundImage:
-                            "radial-gradient(circle at 20% 30%, rgba(0,0,0,0.4) 0, transparent 40%), radial-gradient(circle at 70% 60%, rgba(0,0,0,0.35) 0, transparent 35%), radial-gradient(circle at 40% 80%, rgba(0,0,0,0.3) 0, transparent 30%)",
-                        }}
-                      />
-                    </div>
-                    {/* Clean side (right half) */}
-                    <div
-                      className="absolute inset-y-0 right-0 w-1/2 bg-gradient-to-br from-brand-100 via-accent-400/30 to-white"
-                      style={{
-                        clipPath: "polygon(8% 0, 100% 0, 100% 100%, 0 100%)",
-                      }}
-                    />
-                    {/* Diagonal split label */}
-                    <div className="absolute left-4 top-4 rounded-full bg-ink-900/60 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-white backdrop-blur-sm">
-                      Vorher
-                    </div>
-                    <div className="absolute right-4 top-4 rounded-full bg-cta-500 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-white shadow-soft">
-                      Nachher
-                    </div>
-
-                    {/* Spray nozzle illustration */}
-                    <svg
-                      viewBox="0 0 400 300"
-                      className="absolute inset-0 h-full w-full"
-                      aria-hidden="true"
-                    >
-                      <defs>
-                        <linearGradient
-                          id="spray"
-                          x1="0%"
-                          y1="0%"
-                          x2="100%"
-                          y2="0%"
-                        >
-                          <stop offset="0%" stopColor="#22D3EE" stopOpacity="0.9" />
-                          <stop offset="100%" stopColor="#22D3EE" stopOpacity="0" />
-                        </linearGradient>
-                      </defs>
-                      <path
-                        d="M180 130 L320 90 L320 210 L180 170 Z"
-                        fill="url(#spray)"
-                        opacity="0.7"
-                      />
-                      <circle cx="180" cy="150" r="6" fill="#0E6E96" />
-                      <rect
-                        x="120"
-                        y="144"
-                        width="60"
-                        height="14"
-                        rx="3"
-                        fill="#0A587A"
-                      />
-                    </svg>
-                  </div>
-
-                  <div className="border-t border-ink-200 p-5">
-                    <div className="flex items-center justify-between gap-4">
-                      <div>
-                        <p className="text-sm font-semibold text-ink-900">
-                          Sichtbarer Unterschied – garantiert.
-                        </p>
-                        <p className="mt-0.5 text-xs text-ink-500">
-                          Beispielhafte Darstellung
-                        </p>
-                      </div>
-                      <div className="flex -space-x-1">
-                        <span className="h-8 w-8 rounded-full border-2 border-white bg-brand-100" />
-                        <span className="h-8 w-8 rounded-full border-2 border-white bg-accent-400/40" />
-                        <span className="h-8 w-8 rounded-full border-2 border-white bg-cta-400/60" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <BeforeAfterSlider />
 
                 {/* Floating stat card */}
                 <div className="absolute -bottom-6 -left-4 hidden rounded-2xl border border-ink-200 bg-white p-4 shadow-soft-md sm:block">

@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { track } from "@vercel/analytics";
 
 type Props = {
   children?: React.ReactNode;
@@ -25,7 +24,8 @@ export default function BookingButton({
   // Track click + open modal
   const handleClick = () => {
     try {
-      track("booking_intent", { source });
+      // Umami custom event – cookiefrei, kostenlos, DSGVO-konform
+      window.umami?.track("booking_intent", { source });
     } catch {
       // Silent: analytics must never break UX
     }

@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Poppins, Open_Sans } from "next/font/google";
-import { Analytics } from "@vercel/analytics/react";
+import UmamiAnalytics from "@/components/UmamiAnalytics";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -59,7 +59,7 @@ export default function RootLayout({
     <html lang="de" className={`${poppins.variable} ${openSans.variable}`}>
       <body>
         {children}
-        <Analytics />
+        <UmamiAnalytics />
       </body>
     </html>
   );
