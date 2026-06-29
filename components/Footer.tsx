@@ -34,8 +34,8 @@ export default function Footer() {
               </span>
             </div>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-ink-500">
-              Professionelle Hochdruckreinigung für Einfahrten, Terrassen,
-              Fassaden und Gehwege. Sauber. Sorgfältig. Schonend.
+              Professionelle Grundstückspflege und Hochdruckreinigung.
+              Sauber. Verlässlich. Sorgenfrei.
             </p>
           </div>
 
@@ -49,7 +49,7 @@ export default function Footer() {
                   href="#leistungen"
                   className="transition-colors duration-200 hover:text-brand-700"
                 >
-                  Einfahrten
+                  Hochdruckreinigung
                 </a>
               </li>
               <li>
@@ -57,7 +57,7 @@ export default function Footer() {
                   href="#leistungen"
                   className="transition-colors duration-200 hover:text-brand-700"
                 >
-                  Terrassen
+                  Rasen- & Grünpflege
                 </a>
               </li>
               <li>
@@ -65,7 +65,7 @@ export default function Footer() {
                   href="#leistungen"
                   className="transition-colors duration-200 hover:text-brand-700"
                 >
-                  Fassaden
+                  Das Sorglos-Abo
                 </a>
               </li>
               <li>
@@ -73,7 +73,7 @@ export default function Footer() {
                   href="#leistungen"
                   className="transition-colors duration-200 hover:text-brand-700"
                 >
-                  Gehwege
+                  Anlieger- & Gehwegpflege
                 </a>
               </li>
             </ul>
@@ -107,7 +107,7 @@ export default function Footer() {
         <div className="mt-12 flex flex-col items-start justify-between gap-3 border-t border-ink-200 pt-6 text-sm text-ink-500 sm:flex-row sm:items-center">
           <p>© {year} ArealWerk. Alle Rechte vorbehalten.</p>
           <p className="text-xs text-ink-400">
-            Hochdruckreinigung mit Sorgfalt – Made in Germany.
+            Grundstückspflege mit Sorgfalt – Made in Germany.
           </p>
         </div>
       </div>

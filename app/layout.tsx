@@ -18,23 +18,26 @@ const openSans = Open_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "ArealWerk – Hochdruckreinigung für Einfahrten, Terrassen & Fassaden",
+  title: "ArealWerk – Immobilien- & Grundstückspflege im Main-Kinzig-Kreis",
   description:
-    "Professionelle Hochdruckreinigung von Einfahrten, Terrassen, Fassaden und Gehwegen. Schonend, gründlich und zuverlässig – für Ihr Zuhause.",
+    "Hochdruckreinigung, Rasen- und Grünpflege sowie Anliegerpflichten – aus einer Hand. Festpreis, digitales Fotoprotokoll und bargeldlose Abwicklung. Linsengericht und Umkreis.",
   keywords: [
-    "Hochdruckreiniger",
     "Hochdruckreinigung",
+    "Grundstückspflege",
+    "Rasenpflege",
+    "Gartenpflege",
+    "Hausmeisterservice",
+    "Anliegerpflicht",
+    "Main-Kinzig-Kreis",
+    "Linsengericht",
     "Einfahrt reinigen",
     "Terrasse reinigen",
-    "Fassadenreinigung",
-    "Gehweg reinigen",
-    "Pflasterreinigung",
   ],
   authors: [{ name: "ArealWerk" }],
   openGraph: {
-    title: "ArealWerk – Hochdruckreinigung",
+    title: "ArealWerk – Sauber. Gepflegt. Sorgenfrei.",
     description:
-      "Professionelle Hochdruckreinigung für Einfahrten, Terrassen, Fassaden und Gehwege.",
+      "Hochdruckreinigung und Grünpflege im Main-Kinzig-Kreis. Festpreis, digitale Abwicklung, Fotoprotokoll inklusive.",
     locale: "de_DE",
     type: "website",
   },

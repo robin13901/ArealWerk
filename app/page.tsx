@@ -5,9 +5,9 @@ import Footer from "@/components/Footer";
 
 const services = [
   {
-    title: "Einfahrten",
+    title: "Hochdruckreinigung",
     description:
-      "Pflasterstein, Beton oder Asphalt – wir entfernen Moos, Algen, Öl- und Reifenspuren gründlich und materialschonend.",
+      "Pflastersteine, Terrassen und Einfahrten. Wir entfernen hartnäckigen Schmutz, Moos und Algen materialschonend – für einen glänzenden ersten Eindruck.",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -20,16 +20,20 @@ const services = [
         className="h-7 w-7"
         aria-hidden="true"
       >
-        <path d="M3 21h18" />
-        <path d="M5 21V8l7-5 7 5v13" />
-        <path d="M9 21v-6h6v6" />
+        {/* Pressure washer wand + spray */}
+        <path d="M3 14h4l2-3" />
+        <path d="M9 11h3l2-2" />
+        <path d="m14 9 7-4" />
+        <path d="M14 9v5" />
+        <path d="M11 14h6" />
+        <path d="M11 17h6" />
       </svg>
     ),
   },
   {
-    title: "Terrassen",
+    title: "Rasen- & Grünpflege",
     description:
-      "Holz, WPC, Naturstein oder Fliesen – wir bringen Ihre Terrasse zum strahlen, ohne empfindliche Oberflächen anzugreifen.",
+      "Rasenmähen, Heckenrückschnitt und Unkrautentfernung. Wir sorgen dafür, dass Ihr Gartenbereich stets ordentlich, gesund und repräsentativ aussieht.",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -42,18 +46,19 @@ const services = [
         className="h-7 w-7"
         aria-hidden="true"
       >
-        <rect x="3" y="6" width="18" height="14" rx="2" />
-        <path d="M3 11h18" />
-        <path d="M3 16h18" />
-        <path d="M9 6V3" />
-        <path d="M15 6V3" />
+        {/* Lawn / grass blades */}
+        <path d="M3 20h18" />
+        <path d="M5 20c0-4 2-7 2-10" />
+        <path d="M9 20c0-3 1-6 1-9" />
+        <path d="M13 20c0-3 2-5 2-8" />
+        <path d="M17 20c0-3 1-5 2-7" />
       </svg>
     ),
   },
   {
-    title: "Fassaden",
+    title: "Das Sorglos-Abo",
     description:
-      "Putz, Klinker oder Sichtbeton – fachgerechte Reinigung gegen Algen, Verschmutzungen und Umweltablagerungen.",
+      "Sie wollen sich um nichts mehr kümmern? Wir kommen in regelmäßigen Abständen für die Grünpflege und Reinigung vorbei. Zuverlässig und jederzeit flexibel anpassbar.",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -66,17 +71,16 @@ const services = [
         className="h-7 w-7"
         aria-hidden="true"
       >
-        <path d="M3 21V7l9-4 9 4v14" />
-        <path d="M9 21v-6h6v6" />
-        <path d="M9 11h.01" />
-        <path d="M15 11h.01" />
+        {/* Repeat / subscription cycle */}
+        <path d="M21 12a9 9 0 1 1-3-6.7" />
+        <path d="M21 3v6h-6" />
       </svg>
     ),
   },
   {
-    title: "Gehwege",
+    title: "Anlieger- & Gehwegpflege",
     description:
-      "Sicher und sauber: Wir entfernen Grünbelag, Verschmutzungen und Ablagerungen von Wegen, Treppen und Hofeinfahrten.",
+      "Laubentfernung, Rinnenreinigung und Gehwegpflege. Wir übernehmen Ihre Anliegerpflichten gemäß der örtlichen Straßenreinigungssatzung sicher und pünktlich.",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -89,38 +93,18 @@ const services = [
         className="h-7 w-7"
         aria-hidden="true"
       >
-        <path d="M4 21h16" />
-        <path d="m6 21 4-18" />
-        <path d="m18 21-4-18" />
-        <path d="M9 9h6" />
-        <path d="M8 15h8" />
+        {/* Broom / sweeping */}
+        <path d="M19 4 12 11" />
+        <path d="M11 12 6 17l-3 3" />
+        <path d="m12 11 5 5" />
+        <path d="M11 18a3 3 0 0 1-3 3H4l3-3" />
+        <path d="m14 14 5 5" />
       </svg>
     ),
   },
 ];
 
 const benefits = [
-  {
-    title: "Materialschonend",
-    description:
-      "Wir wählen Druck und Düse passend zur Oberfläche – für ein gründliches Ergebnis ohne Schäden.",
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="1.8"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        className="h-6 w-6"
-        aria-hidden="true"
-      >
-        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" />
-        <path d="m9 12 2 2 4-4" />
-      </svg>
-    ),
-  },
   {
     title: "Festpreis ohne Überraschungen",
     description:
@@ -165,9 +149,9 @@ const benefits = [
     ),
   },
   {
-    title: "Wassersparend",
+    title: "Digitale & einfache Abwicklung",
     description:
-      "Moderne Geräte und durchdachte Arbeitsweise sorgen für ein hervorragendes Ergebnis bei minimalem Wasserverbrauch.",
+      "Kein Bargeld-Stress. Nach getaner Arbeit erhalten Sie automatisch ein Vorher-Nachher-Fotoprotokoll und eine saubere, digitale Rechnung für Ihre Unterlagen.",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -180,7 +164,32 @@ const benefits = [
         className="h-6 w-6"
         aria-hidden="true"
       >
-        <path d="M12 22a7 7 0 0 0 7-7c0-4-3-7-7-13C8 8 5 11 5 15a7 7 0 0 0 7 7Z" />
+        {/* Phone with photo + receipt */}
+        <rect x="5" y="2" width="14" height="20" rx="2" />
+        <path d="M9 7h6" />
+        <rect x="9" y="10" width="6" height="4" rx="0.5" />
+        <path d="M9 17h4" />
+      </svg>
+    ),
+  },
+  {
+    title: "Materialschonend & sicher",
+    description:
+      "Wir arbeiten mit Profi-Geräten und dem exakt passenden Druck für jeden Stein. Unser Team ist voll versichert – Ihr Eigentum ist bei uns in den besten Händen.",
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        className="h-6 w-6"
+        aria-hidden="true"
+      >
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" />
+        <path d="m9 12 2 2 4-4" />
       </svg>
     ),
   },
@@ -217,30 +226,27 @@ export default function Home() {
                     className="h-1.5 w-1.5 rounded-full bg-cta-500"
                     aria-hidden="true"
                   />
-                  Hochdruckreinigung mit System
+                  Immobilien- & Grundstückspflege
                 </span>
                 <h1 className="mt-5 font-heading text-4xl font-semibold leading-[1.1] tracking-tight sm:text-5xl lg:text-6xl">
-                  Sauber wie neu.
-                  <span className="block text-brand-700">
-                    Schonend gemacht.
-                  </span>
+                  Sauber. Gepflegt.
+                  <span className="block text-brand-700">Sorgenfrei.</span>
                 </h1>
                 <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink-500">
-                  Einfahrten, Terrassen, Fassaden und Gehwege – wir entfernen
-                  Moos, Algen, Öl und Schmutz mit moderner
-                  Hochdrucktechnik. Materialschonend, gründlich und zum
-                  fairen Festpreis.
+                  Ob professionelle Hochdruckreinigung für Terrassen und
+                  Einfahrten oder die regelmäßige Rasen- und Gartenpflege –
+                  ArealWerk ist Ihr zuverlässiger Partner in der Region.
+                  Wir pflegen Ihr Grundstück schonend, gründlich und zum
+                  transparenten Festpreis. Lehnen Sie sich zurück, wir
+                  übernehmen die Arbeit.
                 </p>
 
                 <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
                   <BookingButton size="lg" source="hero">
                     Jetzt Termin anfragen
                   </BookingButton>
-                  <a
-                    href="#leistungen"
-                    className="btn-secondary"
-                  >
-                    Leistungen ansehen
+                  <a href="#leistungen" className="btn-secondary">
+                    Unsere Leistungen
                   </a>
                 </div>
 
@@ -252,11 +258,11 @@ export default function Home() {
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckIcon />
-                    <span>Versichertes Team</span>
+                    <span>100&nbsp;% bargeldlos &amp; digital</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckIcon />
-                    <span>Kostenlose Beratung</span>
+                    <span>Regional &amp; zuverlässig</span>
                   </li>
                 </ul>
               </div>
@@ -281,12 +287,12 @@ export default function Home() {
             <div className="max-w-2xl">
               <span className="eyebrow">Unsere Leistungen</span>
               <h2 className="mt-4 font-heading text-3xl font-semibold leading-tight sm:text-4xl">
-                Alles, was Ihr Grundstück sauber hält.
+                Alles, was Ihr Grundstück in Bestform hält.
               </h2>
               <p className="mt-4 text-base leading-relaxed text-ink-500">
-                Vom kleinen Gehweg bis zur kompletten Fassade – wir reinigen
-                gründlich und materialgerecht. Ein Partner für alle Flächen
-                rund ums Haus.
+                Vom kleinen Gehweg bis zum kompletten Garten – wir verbinden
+                modernste Technik mit verlässlichem Handwerk. Ein
+                Ansprechpartner für alle Flächen rund ums Haus.
               </p>
             </div>
 
@@ -321,13 +327,15 @@ export default function Home() {
               <div className="lg:col-span-5">
                 <span className="eyebrow">Warum ArealWerk</span>
                 <h2 className="mt-4 font-heading text-3xl font-semibold leading-tight sm:text-4xl">
-                  Sorgfalt, die man sieht.
+                  Zuverlässigkeit, die man sieht.
+                  <span className="block text-brand-700">
+                    Service, der entspannt.
+                  </span>
                 </h2>
                 <p className="mt-4 text-base leading-relaxed text-ink-500">
-                  Wir verbinden moderne Hochdrucktechnik mit echtem
-                  Handwerk. Vor jedem Einsatz prüfen wir Material und
-                  Verschmutzung – damit das Ergebnis stimmt und nichts
-                  beschädigt wird.
+                  Wir machen Schluss mit Handwerker-Frust. Bei uns gibt es
+                  keine versteckten Kosten, keine Termin-Ausfälle und keine
+                  Zettelwirtschaft. Nur saubere Arbeit.
                 </p>
 
                 <div className="mt-8 hidden lg:block">
@@ -381,10 +389,10 @@ export default function Home() {
                     Wir kommen zu Ihnen – in Ihrer Region.
                   </h2>
                   <p className="mt-4 text-base leading-relaxed text-white/80">
-                    ArealWerk ist regional verwurzelt. Wir arbeiten in Ihrer
-                    Stadt sowie im Umkreis von rund 50&nbsp;km. Außerhalb
-                    dieses Gebiets prüfen wir auf Anfrage gerne, ob ein
-                    Einsatz möglich ist.
+                    ArealWerk ist in Linsengericht und dem Main-Kinzig-Kreis
+                    verwurzelt. Wir arbeiten in Ihrer Stadt sowie im Umkreis
+                    von rund 50&nbsp;km. Außerhalb dieses Gebiets prüfen wir
+                    auf Anfrage gerne, ob ein Einsatz möglich ist.
                   </p>
 
                   <ul className="mt-6 grid grid-cols-2 gap-3 text-sm text-white/90 sm:max-w-md">
@@ -430,17 +438,17 @@ export default function Home() {
                       {
                         step: "1",
                         title: "Termin anfragen",
-                        text: "Schildern Sie uns kurz Ihr Vorhaben.",
+                        text: "Telefonisch oder online. Schildern Sie uns kurz Ihr Vorhaben – ganz unkompliziert.",
                       },
                       {
                         step: "2",
                         title: "Festpreis erhalten",
-                        text: "Wir prüfen die Fläche und nennen einen klaren Preis.",
+                        text: "Wir prüfen den Aufwand und nennen Ihnen einen klaren Preis. Was wir vereinbaren, gilt.",
                       },
                       {
                         step: "3",
-                        title: "Sauber ist's.",
-                        text: "Wir kommen pünktlich und sorgen für ein sichtbares Ergebnis.",
+                        title: "Zurücklehnen & freuen",
+                        text: "Wir kommen pünktlich und erledigen die Arbeit. Sie erhalten Fotos und Rechnung bequem digital. Sauber ist's.",
                       },
                     ].map((s) => (
                       <li key={s.step} className="flex gap-4">
@@ -472,11 +480,12 @@ export default function Home() {
           <div className="container-page">
             <div className="rounded-3xl border border-ink-200 bg-white p-8 text-center shadow-soft sm:p-12 lg:p-16">
               <h2 className="font-heading text-3xl font-semibold leading-tight sm:text-4xl">
-                Bereit für glänzende Flächen?
+                Bereit für ein rundum gepflegtes Grundstück?
               </h2>
               <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-ink-500">
                 Fragen Sie unverbindlich Ihren Termin an. Wir melden uns
-                schnellstmöglich mit einem Festpreisangebot zurück.
+                schnellstmöglich mit einem transparenten Festpreisangebot
+                zurück.
               </p>
               <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
                 <BookingButton size="lg" source="final-cta">
